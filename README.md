@@ -16,7 +16,7 @@ Put this script in your project directory.
   # appealing
   appeal_str = "explain here why you got your account suspended/shadowbaned and why it should be reinstated"
   resp = login_utility.appeal(appeal_str) # returns response object, do this if debug is needed:
-  print(resp.json)
+  print(resp.json())
   
   # creating application
   client_id, client_secret = login_utility.create_app("My new app", app_type="script", desc="Some description", about_url="example.com", redir_uri="some redirect uri") #redir_uri is defaulted to localhost:8080
