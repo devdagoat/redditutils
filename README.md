@@ -19,7 +19,13 @@ Put this script in your project directory.
   print(resp.json())
   
   # creating application
-  client_id, client_secret = login_utility.create_app("My new app", app_type="script", desc="Some description", about_url="example.com", redir_uri="some redirect uri") #redir_uri is defaulted to localhost:8080
+  client_id, client_secret = login_utility.create_app(
+  "My new app",
+  app_type="script", 
+  desc="Some description", 
+  about_url="example.com", 
+  redir_uri="some redirect uri") # redir_uri is defaulted to localhost:8080
+ 
   # passing args is optional, script app with name "Test" and localhost redirect uri is created if nothing is passed
   
 ```
